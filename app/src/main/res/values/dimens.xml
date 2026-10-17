@@ -13,6 +13,6 @@
     <dimen name="field_height">56dp</dimen>
     <dimen name="field_spacing">12dp</dimen>
     <dimen name="title_size">28sp</dimen>
-
+    <dimen name="subtitle_size">14sp</dimen>
 
 </resources>
