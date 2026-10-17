@@ -20,6 +20,7 @@
 
     <string name="experience_beginer">Pemula</string>
     <string name="experience_intermediate">Menengah</string>
+    <string name="experience_advanced">Mahir</string>
 
 
 </resources>
