@@ -1,8 +1,10 @@
 package com.au.tugasuserinput
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
@@ -11,8 +13,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import java.lang.reflect.Modifier
 
@@ -45,7 +51,18 @@ fun  FormBiodata(modifier: Modifier){
                 .padding(innerPadding)
                 .background(colorResource(R.color.white))
         ){
-
+            Image(
+                painter = painterResource(
+                    R.drawable.background
+                ),
+                contentDescription = stringResource(R.string.background_description),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxSize()
+                    .height(
+                        dimensionResource(R.dimen.header_height)
+                    )
+                    .align(Alignment.TopCenter)
+            )
         }
 
 
