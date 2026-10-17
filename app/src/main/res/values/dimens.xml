@@ -8,5 +8,8 @@
     <dimen name="header_height">280dp</dimen>
     <dimen name="card_offset">190dp</dimen>
     <dimen name="card_radius">32dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+
+
 
 </resources>
