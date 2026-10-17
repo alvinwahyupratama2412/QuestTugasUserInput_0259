@@ -12,5 +12,5 @@
     <color name="purple_light">#B58AFF</color>
     <color name="gray_text">#858585</color>
     <color name="gray_border">#A4A4AA</color>
-
+    <color name="gray_disabled">#E2E2E2</color>
 </resources>
