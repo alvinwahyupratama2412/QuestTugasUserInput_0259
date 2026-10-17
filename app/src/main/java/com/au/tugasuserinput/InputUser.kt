@@ -20,6 +20,8 @@ import androidx.compose.foundation.preferKeepClear
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -204,7 +206,8 @@ fun  FormBiodata(modifier: Modifier){
                                         stringResource(R.string.experience)
                                     )
                                 }, singleLine = true,
-                                modifier = Modifier.fillMaxWidth())
+                                modifier = Modifier.fillMaxWidth()
+                            )
                             Box(
                                 modifier = Modifier
                                     .matchParentSize()
@@ -213,9 +216,26 @@ fun  FormBiodata(modifier: Modifier){
                                     }
                             )
 
-                            
-
+                            DropdownMenu(
+                                expanded = dropdownterbuka,
+                                onDismissRequest = {
+                                    dropdownterbuka = false
+                                }
+                            ) {
+                                daftarpengalaman.forEach { item ->
+                                    DropdownMenuItem(
+                                        text = { Text(item) },
+                                        onClick = {
+                                            pengalaman = item
+                                            dropdownterbuka = false
+                                        }
+                                    )
+                                }
+                            }
+                        }
                     }
+
+
                 }
             }
         }
