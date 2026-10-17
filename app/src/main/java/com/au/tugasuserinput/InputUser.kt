@@ -205,8 +205,15 @@ fun  FormBiodata(modifier: Modifier){
                                     )
                                 }, singleLine = true,
                                 modifier = Modifier.fillMaxWidth())
+                            Box(
+                                modifier = Modifier
+                                    .matchParentSize()
+                                    .clickable {
+                                        dropdownterbuka = true
+                                    }
+                            )
 
-
+                            
 
                     }
                 }
