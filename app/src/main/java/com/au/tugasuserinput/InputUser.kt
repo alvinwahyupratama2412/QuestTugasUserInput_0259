@@ -5,6 +5,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.res.stringResource
 import java.lang.reflect.Modifier
 
 @Composable
@@ -22,5 +23,10 @@ fun  FormBiodata(modifier: Modifier){
     var berhasil by remember { mutableStateOf("") }
     var datePickerState by remember { mutableStateOf("") }
     var dateFormat by remember { mutableStateOf("") }
+    val daftarpengalaman = listOf(
+        stringResource(R.string.experience_beginer),
+        stringResource(R.string.experience_intermediate),
+        stringResource(R.string.experience_advanced)
+    )
 
 }
