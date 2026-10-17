@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.magnifier
+import androidx.compose.foundation.preferKeepClear
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -135,6 +136,17 @@ fun  FormBiodata(modifier: Modifier){
                             singleLine = true,
                             shape = MaterialTheme.shapes.large,
                             modifier= Modifier.weight(1f)
+                        )
+
+                        OutlinedTextField(
+                            value = namaBelakang,
+                            onValueChange = { namaBelakang = it },
+                            label = {
+                                Text(stringResource(R.string.last_name))
+                            },
+                            singleLine = true,
+                            shape = MaterialTheme.shapes.large,
+                            modifier = Modifier.weight(1f)
                         )
                     }
                 }
