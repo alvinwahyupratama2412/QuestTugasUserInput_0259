@@ -10,5 +10,6 @@
 
     <color name="purple_primary">#7044B5</color>
     <color name="purple_light">#B58AFF</color>
+    <color name="gray_text">#858585</color>
 
 </resources>
