@@ -169,7 +169,19 @@ fun  FormBiodata(modifier: Modifier){
                             dimensionResource(R.dimen.field_spacing)
                         ),
                         verticalAlignment = Alignment.CenterVertically
-                    ) { }
+                    ) {
+                        Box(modifier = Modifier.weight(1f)){
+                            OutlinedTextField(
+                                value = tanggalLahir,
+                                onValueChange = {},
+                                readOnly = true,
+                                label = {
+                                    Text(stringResource(R.string.birth_date))
+                                },
+
+                            )
+                        }
+                    }
                 }
             }
         }
