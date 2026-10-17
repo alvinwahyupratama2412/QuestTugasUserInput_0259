@@ -7,5 +7,6 @@
     <dimen name="screen_padding">24dp</dimen>
     <dimen name="header_height">280dp</dimen>
     <dimen name="card_offset">190dp</dimen>
+    <dimen name="card_radius">32dp</dimen>
 
 </resources>
