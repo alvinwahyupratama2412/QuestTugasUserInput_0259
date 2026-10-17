@@ -102,6 +102,11 @@ fun  FormBiodata(modifier: Modifier){
                         fontSize = dimensionResource(R.dimen.title_size).value.sp,
                         fontWeight = FontWeight.Bold
                     )
+                    Text(
+                        text = stringResource(R.string.form_subtitle),
+                        color = stringResource(R.color.gray_text),
+                        fontSize = dimensionResource(R.dimen.subtitle_size).value.sp
+                    )
                 }
             }
         }
