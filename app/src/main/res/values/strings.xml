@@ -16,5 +16,6 @@
 
     <string name="proceed">Proceed</string>
     <string name="cancel">Batal</string>
+    <string name="confirm">Pilih</string>
 
 </resources>
