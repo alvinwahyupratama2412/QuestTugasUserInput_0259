@@ -1,10 +1,14 @@
 package com.au.tugasuserinput
 
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import java.lang.reflect.Modifier
 
@@ -28,5 +32,12 @@ fun  FormBiodata(modifier: Modifier){
         stringResource(R.string.experience_intermediate),
         stringResource(R.string.experience_advanced)
     )
+    Scaffold(
+        modifier= modifier.fillMaxSize(),
+        containerColor = colorResource(R.color.white)
+    ) {
+
+
+    }
 
 }
