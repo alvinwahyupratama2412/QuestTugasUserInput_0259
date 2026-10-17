@@ -19,5 +19,8 @@ fun  FormBiodata(modifier: Modifier){
     var web by remember { mutableStateOf("") }
     var dropdownterbuka by remember { mutableStateOf("") }
     var tanggalDialog by remember { mutableStateOf("") }
+    var berhasil by remember { mutableStateOf("") }
+
+
 
 }
