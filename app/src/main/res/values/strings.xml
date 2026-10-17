@@ -23,5 +23,6 @@
     <string name="experience_advanced">Mahir</string>
 
     <string name="form_result">Biodata berhasil diisi</string>
+    <string name="background_description">Latar Belakang</string>
 
 </resources>
