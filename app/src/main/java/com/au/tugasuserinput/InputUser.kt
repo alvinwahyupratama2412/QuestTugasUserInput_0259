@@ -1,6 +1,10 @@
 package com.au.tugasuserinput
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -35,7 +39,14 @@ fun  FormBiodata(modifier: Modifier){
     Scaffold(
         modifier= modifier.fillMaxSize(),
         containerColor = colorResource(R.color.white)
-    ) {
+    ) { innerPadding ->
+        Box(
+            modifier= Modifier.fillMaxSize()
+                .padding(innerPadding)
+                .background(colorResource(R.color.white))
+        ){
+
+        }
 
 
     }
