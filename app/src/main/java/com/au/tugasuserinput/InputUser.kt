@@ -5,11 +5,13 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.magnifier
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -102,10 +104,18 @@ fun  FormBiodata(modifier: Modifier){
                         fontSize = dimensionResource(R.dimen.title_size).value.sp,
                         fontWeight = FontWeight.Bold
                     )
+
                     Text(
                         text = stringResource(R.string.form_subtitle),
-                        color = stringResource(R.color.gray_text),
-                        fontSize = dimensionResource(R.dimen.subtitle_size).value.sp
+                        color = colorResource(R.color.gray_text),
+                        fontSize = dimensionResource(R.dimen.subtitle_size
+                        ).value.sp
+                    )
+
+                    Spacer(
+                        modifier= Modifier.height(
+                            dimensionResource(R.dimen.padding_medium)
+                        )
                     )
                 }
             }
