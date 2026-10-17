@@ -7,7 +7,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -20,7 +22,6 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import java.lang.reflect.Modifier
 
 @Composable
 fun  FormBiodata(modifier: Modifier){
@@ -63,6 +64,19 @@ fun  FormBiodata(modifier: Modifier){
                     )
                     .align(Alignment.TopCenter)
             )
+            Surface(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(
+                        top = dimensionResource(R.dimen.card_offset)
+                    ),
+                shape = RoundedCornerShape(
+                    topStart = dimensionResource(R.dimen.card_radius),
+                    topEnd =  dimensionResource(R.dimen.card_radius)
+                ),
+                color = colorResource(R.color.white),
+                shadowElevation = dimensionResource(R.dimen.card_elevation)
+            ) { }
         }
 
 
