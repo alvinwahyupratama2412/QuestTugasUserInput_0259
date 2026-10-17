@@ -18,6 +18,6 @@ fun  FormBiodata(modifier: Modifier){
     var uix by remember { mutableStateOf("") }
     var web by remember { mutableStateOf("") }
     var dropdownterbuka by remember { mutableStateOf("") }
-
+    var tanggalDialog by remember { mutableStateOf("") }
 
 }
