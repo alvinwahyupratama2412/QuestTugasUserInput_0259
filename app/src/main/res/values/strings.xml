@@ -15,5 +15,6 @@
     <string name="web_skill">Web</string>
 
     <string name="proceed">Proceed</string>
+    <string name="cancel">Batal</string>
 
 </resources>
