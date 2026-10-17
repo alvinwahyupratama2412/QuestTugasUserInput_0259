@@ -11,5 +11,5 @@ import java.lang.reflect.Modifier
 fun  FormBiodata(modifier: Modifier){
 
     var namaDepan by remember { mutableStateOf("") }
-
+    var namaBelakang by remember { mutableStateOf("") }
 }
