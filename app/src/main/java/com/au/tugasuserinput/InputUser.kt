@@ -32,6 +32,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.composed
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.layout.ContentScale
@@ -50,6 +51,7 @@ fun  FormBiodata(modifier: Modifier){
     var namaBelakang by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var tanggalLahir by remember { mutableStateOf("") }
+    var pengalaman by remember { mutableStateOf("") }
     var android by remember { mutableStateOf("") }
     var uix by remember { mutableStateOf("") }
     var web by remember { mutableStateOf("") }
@@ -186,11 +188,26 @@ fun  FormBiodata(modifier: Modifier){
                                 modifier= Modifier
                                     .matchParentSize()
                                     .clickable{
-                                        tanggalDialog= true
+                                        tanggalDialog=true
                                     }
                             )
 
                         }
+
+                        Box(modifier = Modifier.weight(1f)) {
+                            OutlinedTextField(
+                                value = pengalaman,
+                                onValueChange = {},
+                                readOnly = true,
+                                label = {
+                                    Text(
+                                        stringResource(R.string.experience)
+                                    )
+                                }, singleLine = true,
+                                modifier = Modifier.fillMaxWidth())
+
+
+
                     }
                 }
             }
