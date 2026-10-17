@@ -1,9 +1,15 @@
 package com.au.tugasuserinput
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import java.lang.reflect.Modifier
 
 @Composable
 fun  FormBiodata(modifier: Modifier){
+
+    var namaDepan by remember { mutableStateOf("") }
 
 }
