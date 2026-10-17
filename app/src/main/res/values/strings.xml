@@ -22,5 +22,6 @@
     <string name="experience_intermediate">Menengah</string>
     <string name="experience_advanced">Mahir</string>
 
+    <string name="form_result">Biodata berhasil diisi</string>
 
 </resources>
