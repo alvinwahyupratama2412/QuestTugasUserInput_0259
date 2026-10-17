@@ -15,6 +15,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -27,6 +28,9 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun  FormBiodata(modifier: Modifier){
@@ -91,7 +95,14 @@ fun  FormBiodata(modifier: Modifier){
                         ),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.field_spacing))
-                ) { }
+                ) {
+                    Text(
+                        text = stringResource(R.string.form_title),
+                        color = colorResource(R.color.purple_primary),
+                        fontSize = dimensionResource(R.dimen.title_size).value.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
             }
         }
 
