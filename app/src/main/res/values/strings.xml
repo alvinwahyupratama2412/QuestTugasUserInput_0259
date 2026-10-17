@@ -25,4 +25,6 @@
     <string name="form_result">Biodata berhasil diisi</string>
     <string name="background_description">Latar Belakang</string>
     <string name="date_format">dd/MM/yyyy</string>
+    <string name="calendar_icon">▦</string>
+    <string name="dropdown_icon">▾</string>
 </resources>
